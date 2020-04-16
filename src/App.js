@@ -16,9 +16,9 @@ function App() {
       <div>
         <Secciones/>
       </div>
-      <div>
+      <a href="">
         <Opo1/>
-      </div>
+      </a>
     </div>
   );
 }
