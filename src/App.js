@@ -19,19 +19,24 @@ function App() {
       <div>
         <Secciones/>
       </div>
-      <a href="">
-        <Opo1/>
-      </a>
-      <a href="">
-        <Opo2/>
-      </a>
-      <a href="">
-        <Opo3/>
-      </a>
-      <a href="">
-        <Opo4/>
-      </a>
+
+      <ul className="todaslasopos">
+        <ul>
+            <a href=""><Opo1/></a>
+        </ul>
+        <ul>
+            <a href=""><Opo2/></a>
+        </ul>
+        <ul>
+            <a href=""><Opo3/></a>
+        </ul>
+        <ul>
+            <a href=""><Opo4/></a>
+        </ul>
+      </ul>   
+     
     </div>
+    
   );
 }
 

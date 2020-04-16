@@ -8,7 +8,7 @@ class Opo3 extends React.Component {
     render() {
         return(
             <div>
-                <img src={OpoI3} alt="Primera opo a elegir" height="300vmin" width="360vmin"/>          
+                <img src={OpoI3} alt="Primera opo a elegir" height="280vmin" width="325vmin"/>          
             
             </div>
         );

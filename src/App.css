@@ -24,5 +24,12 @@
   font-size: 3vmin;
   color: white;
   text-decoration: none;
+  
+  
+}
 
+.todaslasopos ul {
+  display:block;
+  float:left;
+  padding:10px;
 }
