@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <header className="contacto">
         <Contacto/>
-        
       </header>
     </div>
   );
