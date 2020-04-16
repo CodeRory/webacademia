@@ -3,7 +3,10 @@ import React from 'react';
 class contacto extends React.Component{
     render(){
         return(
-            <h1>"Academia Yorel"</h1>
+            <div>
+                <h1>555-55-55-55</h1>
+                <h2>L-V 9:00 - 19:00</h2>
+            </div>
         )
     }
 }
