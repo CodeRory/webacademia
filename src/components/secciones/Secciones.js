@@ -9,7 +9,7 @@ class secciones extends React.Component {
 
             <ul className="secciones">
                 <ul>
-                    <a href="">Inicio</a>
+                     <a href="">Inicio</a>
                 </ul>
                 <ul>
                     <a href="">Profesores</a>
