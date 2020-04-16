@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Contacto from './components/Contacto';
+import Contacto from './components/contacto/Contacto';
 
 
 import './App.css';
