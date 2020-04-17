@@ -2,7 +2,10 @@ import React from 'react';
 
 import Contacto from './components/contacto/Contacto';
 import Secciones from './components/secciones/Secciones';
+import Secciones2 from './components/secciones/Secciones2';
+import Secciones3 from './components/secciones/Secciones3';
 import Opos from './components/Opos/Opos';
+
 
 
 
@@ -16,6 +19,10 @@ function App() {
       </header>
       <div>
         <Secciones/>
+        <Secciones2/>
+        <button className="aulaVirtual">Aula Virtual</button>
+        <Secciones3/>
+
       </div>
       <div>
         <Opos/>

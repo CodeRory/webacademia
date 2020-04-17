@@ -17,4 +17,15 @@
 
 
 
+.aulaVirtual {
+  width:178px;
+  height:18px;
+  background-color:#ff3232 ;
+  padding:12px;
+  border-radius:5px;
+  font-weight:bold;
+  color:white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 
+}
