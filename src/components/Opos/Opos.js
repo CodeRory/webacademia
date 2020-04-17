@@ -14,12 +14,12 @@ class Opos extends React.Component {
     render() {
         return(
             <div className="opos">
-                <ul>
-                    <ul> <a href=""><img src={OpoI1} alt="Primera opo a elegir" height="280vmin" width="325vmin"/></a></ul>
+                <p>
+                    <ul><a href=""><img src={OpoI1} alt="Primera opo a elegir" height="280vmin" width="325vmin"/></a></ul>
                     <ul><a href=""><img src={OpoI2} alt="Primera opo a elegir" height="280vmin" width="325vmin"/> </a></ul>
                     <ul><a href=""><img src={OpoI3} alt="Primera opo a elegir" height="280vmin" width="325vmin"/></a></ul>
                     <ul><a href=""><img src={OpoI4} alt="Primera opo a elegir" height="280vmin" width="325vmin"/> </a></ul> 
-                </ul>
+                </p>
             </div>
         );
     }
