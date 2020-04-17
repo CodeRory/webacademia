@@ -4,6 +4,7 @@ import Contacto from './components/contacto/Contacto';
 import Secciones from './components/secciones/Secciones';
 import Secciones2 from './components/secciones/Secciones2';
 import Secciones3 from './components/secciones/Secciones3';
+
 import Opos from './components/Opos/Opos';
 
 
@@ -20,7 +21,7 @@ function App() {
       <div>
         <Secciones/>
         <Secciones2/>
-        <button className="aulaVirtual">Aula Virtual</button>
+        <a href="" className="button" > Aula Virtual </a>  
         <Secciones3/>
 
       </div>
