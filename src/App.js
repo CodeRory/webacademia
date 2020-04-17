@@ -19,22 +19,9 @@ function App() {
       <div>
         <Secciones/>
       </div>
-
-      <ul className="todaslasopos">
-        <ul>
-            <a href=""><Opo1/></a>
-        </ul>
-        <ul>
-            <a href=""><Opo2/></a>
-        </ul>
-        <ul>
-            <a href=""><Opo3/></a>
-        </ul>
-        <ul>
-            <a href=""><Opo4/></a>
-        </ul>
-      </ul>   
-     
+      <div>
+        <Opo1/>
+      </div>     
     </div>
     
   );
