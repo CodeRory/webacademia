@@ -1,8 +1,16 @@
-/* .todaslasopos ul {
-    display:block;
+.opos ul {
+    display: inline;
     float:left;
     padding:10px;
+    flex-direction: right;
+    justify-content: left;
+    text-align: center;
   }
-   */
-  
+   
+.opo li {
+  display: inline;
+  text-align: center;
+  margin: 0 10px 0 0;
+
+}
   
