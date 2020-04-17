@@ -35,11 +35,11 @@ class Dropdown extends React.Component {
     
               { this.state.displayMenu ? (
               <ul>
-                <li><a className="active" href="#Create Page">Profesor 1</a></li>
-                <li><a href="#Manage Pages">Profesor 2</a></li>
-                <li><a href="#Create Ads">Profesor 3</a></li>
-                <li><a href="#Manage Ads">Profesor 4</a></li>
-                <li><a href="#Activity Logs">Profesor 5</a></li>
+                <li><a className="active" href="">Profesor 1</a></li>
+                <li><a href="">Profesor 2</a></li>
+                <li><a href="">Profesor 3</a></li>
+                <li><a href="">Profesor 4</a></li>
+                <li><a href="">Profesor 5</a></li>
              </ul>
             ):
             (
