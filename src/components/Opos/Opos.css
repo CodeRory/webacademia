@@ -1,20 +1,8 @@
-.opos ul {
-    display: inline-block;
-    float:left;
-    padding:25px;
-    flex-direction: right;
-    justify-content: left;
-    text-align: center;
-    -webkit-box-shadow: 13px 11px 5px -4px rgba(135,132,135,0.83);
-    -moz-box-shadow: 13px 11px 5px -4px rgba(135,132,135,0.83);
-    box-shadow: 13px 11px 5px -4px rgba(135,132,135,0.83);
-   
-  }
-   
+  
 .maincontainer {
   position: relative;
-  width: 250px;
-  height: 320px;
+  width: 280px;
+  height: 300px;
   
 }
 
@@ -38,6 +26,7 @@
   backface-visibility: hidden;
   background: none;
   color: #333;
+  border: none;
 }
 
 .theback{
@@ -45,7 +34,45 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: #fafafa;
+  background:#e7a61a;
   color: #333;
   transform: rotateY(180deg);
+  -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+  border-radius: 10px;
+}
+
+.thebackinformation ul a {
+  
+  
+}
+
+#opo1h1 { 
+  text-decoration: none;
+  font-size: 21px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+
+}
+
+#opo1h2 {
+  text-decoration: none;
+  font-size: 21px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: rgb(141, 48, 48);
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+
+
 }
