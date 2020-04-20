@@ -15,8 +15,8 @@ class Opos extends React.Component {
         return(
             <div className="maincontainer">
                 <div className="thecard">
-                    <div className="thefront">Front</div>
-                    <div className="theback">Back</div>             
+                    <div className="thefront"><img src={OpoI1} alt="Primera opo a elegir" height="280vmin" width="325vmin"/></div>
+                    <div className="theback"><a href=""><img src={OpoI1} alt="Primera opo a elegir" height="280vmin" width="325vmin"/></a></div>             
                 
                 </div>
                
