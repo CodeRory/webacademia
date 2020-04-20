@@ -13,16 +13,83 @@ class Opos extends React.Component {
     
     render() {
         return(
-            <div className="opos">
-                <p>
-                    <ul><a href=""><img src={OpoI1} alt="Primera opo a elegir" height="280vmin" width="325vmin"/></a></ul>
-                    <ul><a href=""><img src={OpoI2} alt="Primera opo a elegir" height="280vmin" width="325vmin"/> </a></ul>
-                    <ul><a href=""><img src={OpoI3} alt="Primera opo a elegir" height="280vmin" width="325vmin"/></a></ul>
-                    <ul><a href=""><img src={OpoI4} alt="Primera opo a elegir" height="280vmin" width="325vmin"/> </a></ul> 
-                </p>
-            </div>
+            <div>
+                <div className="maincontainer">
+                    <div className="thecard">
+                        <div className="thefront"><img src={OpoI1} alt="Primera opo a elegir" height="320px" width="320px"/></div>
+                        <div className="theback">
+                            <ul id="thebackinformation">
+                                <ul id="opo1h1">Oposición 1</ul>
+                                <ul><a href="" id="opo1h2">Información</a></ul>
+                                <br></br>
+                                <ul><a href="" id="opo1h3">Temario y Grupos</a></ul>                                
+                            </ul>                         
+                        </div>                
+                    </div>               
+                </div>
+
+                <div className="maincontainer">
+                    <div className="thecard">
+                        <div className="thefront"><img src={OpoI2} alt="Primera opo a elegir" height="320px" width="320px"/></div>
+                        <div className="theback">
+                        <ul id="thebackinformation">                        
+                            <ul id="opo1h1">Oposición 1</ul>
+                            <ul><a href="" id="opo1h2">Información</a></ul>
+                            <br></br>
+                            <ul><a href="" id="opo1h3">Temario y Grupos</a></ul>                                
+                        </ul> 
+                        </div>             
+                    </div>       
+                </div>
+
+                <div className="maincontainer">
+                    <div className="thecard">
+                        <div className="thefront"><img src={OpoI3} alt="Primera opo a elegir" height="320px" width="320px"/></div>
+                        <div className="theback">
+                        <ul id="thebackinformation">                        
+                            <ul id="opo1h1">Oposición 1</ul>
+                            <ul><a href="" id="opo1h2">Información</a></ul>
+                            <br></br>
+                            <ul><a href="" id="opo1h3">Temario y Grupos</a></ul>                                
+                        </ul> 
+                        </div>             
+                    </div>       
+                </div>
+
+
+                <div className="maincontainer">
+                    <div className="thecard">
+                        <div className="thefront"><img src={OpoI4} alt="Primera opo a elegir" height="320px" width="320px"/></div>
+                        <div className="theback">
+                        <ul id="thebackinformation">                        
+                            <ul id="opo1h1">Oposición 1</ul>
+                            <ul><a href="" id="opo1h2">Información</a></ul>
+                            <br></br>
+                            <ul><a href="" id="opo1h3">Temario y Grupos</a></ul>                                
+                        </ul> 
+                        </div>             
+                    </div>       
+                </div>
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+            </div>    
+               
+            
+            
         );
     }
 }
+
 
 export default Opos;
