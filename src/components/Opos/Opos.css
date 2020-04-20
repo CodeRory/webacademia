@@ -1,0 +1,14 @@
+.opos ul {
+    display: inline-block;
+    float:left;
+    padding:25px;
+    flex-direction: right;
+    justify-content: left;
+    text-align: center;
+    -webkit-box-shadow: 13px 11px 5px -4px rgba(135,132,135,0.83);
+    -moz-box-shadow: 13px 11px 5px -4px rgba(135,132,135,0.83);
+    box-shadow: 13px 11px 5px -4px rgba(135,132,135,0.83);
+   
+  }
+   
+
