@@ -25,4 +25,5 @@ class Opos extends React.Component {
     }
 }
 
+
 export default Opos;
