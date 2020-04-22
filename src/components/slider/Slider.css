@@ -1,0 +1,17 @@
+.slider {
+    width: 95%;
+    margin: auto;
+}
+
+#sliderul {
+    display: flex;
+    list-style: none;
+
+
+}
+
+.slider li {
+    list-style: none;
+
+
+}

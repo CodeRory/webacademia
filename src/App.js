@@ -7,6 +7,8 @@ import Secciones3 from './components/secciones/Secciones3';
 
 import Opos from './components/Opos/Opos';
 
+import Slider from './components/slider/Slider';
+
 
 
 
@@ -24,6 +26,9 @@ function App() {
         <a href="" className="button" > Aula Virtual </a>  
         <Secciones3/>
 
+      </div>
+      <div>
+       <Slider/>
       </div>
       <div>
         <Opos/>
