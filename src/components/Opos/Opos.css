@@ -75,3 +75,8 @@
   margin-left: -20px;  
   padding-top: 150px;
 }
+
+.todas {
+  display: flex;
+
+}

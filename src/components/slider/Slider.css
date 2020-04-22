@@ -9,6 +9,8 @@
     padding: 0;
     width: 400%; /* Son cuatro imágenes que luego le vamos a dar 100 a cada una, así que 400% */
     animation: cambio 20s infinite; /* Creamos la animación y le decimos las paradas con @keyframes */
+    animation-direction: alternate; /* Para que cuando llegue al final no salte bruscamente al principio */
+    /* animation-timing-function: ease-in; Para que la transición arranque más lento */
 }
 
 @keyframes cambio {        /* Aquí vamos a darle las paradas (keyframes) a "cambio" */

@@ -14,7 +14,7 @@ class Opos extends React.Component {
     
     render() {
         return(
-            <div>
+            <div className="todas">
                 <div className="maincontainer">
                     <div className="thecard">
                         <div className="thefront"><img src={OpoI1} alt="Primera opo a elegir" height="320px" width="320px"/></div>
