@@ -1,17 +1,40 @@
 .slider {
     width: 95%;
     margin: auto;
+    overflow: hidden; /* Los elementos que están fuera no se ven, para que no salgan las cuatro imágenes seguidas */
 }
 
-#sliderul {
-    display: flex;
-    list-style: none;
-
-
+.slider ul {
+    display: flex; /* Coloca las fotos en línea horizonal */
+    padding: 0;
+    width: 400%; /* Son cuatro imágenes que luego le vamos a dar 100 a cada una, así que 400% */
+    animation: cambio 20s infinite; /* Creamos la animación y le decimos las paradas con @keyframes */
 }
+
+@keyframes cambio {        /* Aquí vamos a darle las paradas (keyframes) a "cambio" */
+    0% {margin-left: 0;}   /* En el primer cuartil (4 segundos) la imagen no se va a monver */
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;} /* Aquí empieza la segunda imagen */
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;} /* Aquí empieza la tercera imagen */
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;} /* Aquí empieza la cuarta imagen */
+    100% {margin-left: -300%;}
+}
+
+
 
 .slider li {
-    list-style: none;
+    width: 100%;
+    list-style: none; /* Les quita el punto */
+    
+}
+
+.slider img {
+    width: 100%
 
 
 }

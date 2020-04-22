@@ -12,8 +12,8 @@ class Slider extends React.Component {
     render(){
         return(
             <div className="slider">
-                <ul id="sliderul">
-                    <li className><img src={slider1} alt="El primer slider"/></li>
+                <ul>
+                    <li><img src={slider1} alt="El primer slider"/></li>
                     <li><img src={slider2} alt="El segundo slider"/></li>
                     <li><img src={slider3} alt="El tercer slider"/></li>
                     <li><img src={slider4} alt="El cuarto slider"/></li>             

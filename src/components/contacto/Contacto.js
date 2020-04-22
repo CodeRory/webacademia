@@ -1,6 +1,7 @@
 import React from 'react';
 import phone from '../contacto/phone.png'
 
+/* CONTACTO TIENE SU CSS EN EL GENERAL */
 
 class contacto extends React.Component {
     
