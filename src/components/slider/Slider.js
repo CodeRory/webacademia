@@ -4,6 +4,7 @@ import slider2 from '../slider/slider2.png';
 import slider3 from '../slider/slider3.png';
 import slider4 from '../slider/slider4.png';
 
+
 import './Slider.css';
 
 
