@@ -1,26 +1,32 @@
 import React from 'react';
-import slider1 from '../slider/slider1.png';
-import slider2 from '../slider/slider2.png';
-import slider3 from '../slider/slider3.png';
-import slider4 from '../slider/slider4.png';
-
-import './Slider.css';
+import '../slider/Slider.css';
+import Slider from 'react-animated-slider'
+import 'react-animated-slider/build/horizontal.css'
+import content from './content'
 
 
-class Slider extends React.Component {
+function Autoplay() {
+    return (
+        <div>
+            <Slider classNames={Slider} autoplay={2500}>
+            {content.map((item, index) => (
+                <div 
+                    key={index}
 
-    render(){
-        return(
-            <div className="slider">
-                <ul>
-                    <li><img src={slider1} alt="El primer slider"/></li>
-                    <li><img src={slider2} alt="El segundo slider"/></li>
-                    <li><img src={slider3} alt="El tercer slider"/></li>
-                    <li><img src={slider4} alt="El cuarto slider"/></li>             
-                </ul>            
-            </div>
-        )
-    }
+                    style={{ background: `url('${item.image}') no-repeat center center` }}
+                >
+                    <div className="center">
+                        <h1 id="titulo">{item.title}</h1>
+                        <p id="descripcion">{item.description}</p>
+                        <button id="boton">{item.button}</button>
+                    </div>
+                </div>
+            ))}
+            </Slider>
+        
+        
+        </div>
+    );
 }
 
-export default Slider;
+export default Autoplay;
