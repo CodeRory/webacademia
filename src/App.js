@@ -1,9 +1,9 @@
 import React from 'react';
 
 import Contacto from './components/contacto/Contacto';
-import Secciones from './components/secciones/Secciones';
-import Secciones2 from './components/secciones/Secciones2';
-import Secciones3 from './components/secciones/Secciones3';
+
+import Dropdown from './components/dropdown/Dropdown';
+
 
 import Opos from './components/Opos/Opos';
 
@@ -23,10 +23,8 @@ function App() {
         <Contacto/>        
       </header>
       <div>
-        <Secciones/>
-        <Secciones2/>
-        <a href="" className="button" > Aula Virtual </a>  
-        <Secciones3/>
+        <Dropdown/>
+       
       </div>
       <div>
        <Slider id="slidercss"/>
