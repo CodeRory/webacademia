@@ -2,7 +2,10 @@
 	position: relative;
 	width: 100%;
 	height: 400px;
-	overflow: hidden;
+    overflow: hidden;
+    max-width: 4000px;
+    height: 450px;
+    /* ES AQUÍ DONDE CAMBIAN LAS IMÁGENES DE FONDO */
 
 	& a {
 		&.previousButton, &.nextButton {
@@ -79,4 +82,11 @@
 			left: -100%;
 		}
 	}
+}
+
+.center {
+    color: white;
+    padding-left: 40vmin;
+
+
 }

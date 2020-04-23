@@ -9,6 +9,8 @@ import Opos from './components/Opos/Opos';
 
 import Slider from './components/slider/Slider';
 
+import './App.css';
+
 
 
 
@@ -25,10 +27,9 @@ function App() {
         <Secciones2/>
         <a href="" className="button" > Aula Virtual </a>  
         <Secciones3/>
-
       </div>
       <div>
-       <Slider/>
+       <Slider id="slidercss"/>
       </div>
       <div>
         <Opos/>

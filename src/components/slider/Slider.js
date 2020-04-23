@@ -8,17 +8,17 @@ import content from './content'
 function Autoplay() {
     return (
         <div>
-            <Slider classNames={Slider} autoplay={3000}>
+            <Slider classNames={Slider} autoplay={2500}>
             {content.map((item, index) => (
-                <div
+                <div 
                     key={index}
 
                     style={{ background: `url('${item.image}') no-repeat center center` }}
                 >
                     <div className="center">
-                        <h1>{item.title}</h1>
-                        <p>{item.description}</p>
-                        <button>{item.button}</button>
+                        <h1 id="titulo">{item.title}</h1>
+                        <p id="descripcion">{item.description}</p>
+                        <button id="boton">{item.button}</button>
                     </div>
                 </div>
             ))}
