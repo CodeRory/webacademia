@@ -20,7 +20,8 @@ function Dropdown() {
                 <li><a href="">Web Design</a></li>
                 <li><a href="">App Design</a></li>
                 <li>
-                  <a href="">More</a>
+                  <a href="">More
+                  <span className="fa fa-plus"></span></a> 
                   <ul>
                     <li><a href="">Submenu 1</a></li>
                     <li><a href="">Submenu 2</a></li>
