@@ -1,42 +1,82 @@
 .slider {
-    width: 95%;
-    margin: auto;
-    overflow: hidden; /* Los elementos que están fuera no se ven, para que no salgan las cuatro imágenes seguidas */
+	position: relative;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+
+	& a {
+		&.previousButton, &.nextButton {
+			font-size: 22px;
+			line-height: 0;
+			display: block;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: all .3s linear;
+			z-index: 1;
+			color: #333;
+			padding: 10px;
+			text-decoration: none;
+			backface-visibility: hidden; /* prevent jump effect when scaling */
+
+			&:not(.disabled):hover {
+				transform: translateY(-50%) scale(1.25);
+				cursor: pointer;
+			}
+		}
+
+		&.previousButton {
+			left: 20px;
+		}
+
+		&.nextButton {
+			right: 20px;
+		}
+	}
 }
 
-.slider ul {
-    display: flex; /* Coloca las fotos en línea horizonal */
-    padding: 0;
-    width: 400%; /* Son cuatro imágenes que luego le vamos a dar 100 a cada una, así que 400% */
-    animation: cambio 20s infinite; /* Creamos la animación y le decimos las paradas con @keyframes */
-    animation-direction: alternate; /* Para que cuando llegue al final no salte bruscamente al principio */
-    /* animation-timing-function: ease-in; Para que la transición arranque más lento */
-}
+.slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
 
-@keyframes cambio {        /* Aquí vamos a darle las paradas (keyframes) a "cambio" */
-    0% {margin-left: 0;}   /* En el primer cuartil (4 segundos) la imagen no se va a monver */
-    20% {margin-left: 0;}
+	&.hidden {
+		visibility: hidden;
+	}
 
-    25% {margin-left: -100%;} /* Aquí empieza la segunda imagen */
-    45% {margin-left: -100%;}
+	&.previous {
+		left: -100%;
+	}
 
-    50% {margin-left: -200%;} /* Aquí empieza la tercera imagen */
-    70% {margin-left: -200%;}
+	&.current {
+		left: 0;
+	}
 
-    75% {margin-left: -300%;} /* Aquí empieza la cuarta imagen */
-    100% {margin-left: -300%;}
-}
+	&.next {
+		left: 100%;
+	}
 
+	&.animateIn,
+	&.animateOut {
+		transition: all 2s ease;
+	}
 
+	&.animateIn {
+		&.previous,
+		&.next {
+			left: 0;
+			visibility: visible;
+		}
+	}
 
-.slider li {
-    width: 100%;
-    list-style: none; /* Les quita el punto */
-    
-}
+	&.animateOut {
+		&.previous {
+			left: 100%;
+		}
 
-.slider img {
-    width: 100%
-
-
+		&.next {
+			left: -100%;
+		}
+	}
 }
