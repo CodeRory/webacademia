@@ -20,7 +20,7 @@ nav{
     font-weight: 600;
     line-height: 70px;
     padding-left: 60px;
-    display: none;
+    
 
 }
 
@@ -80,7 +80,12 @@ nav ul ul{
     opacity: 0;
     visibility: hidden;
     transition: top .3s;   /* La diferencia entre los 90px de este y los 70 del siguiente es el saltito que da al abrirlo */
-    
+}
+
+nav ul ul ul{
+    border-top: none;
+
+
 }
 
 nav ul li:hover > ul{
