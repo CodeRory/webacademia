@@ -4,7 +4,7 @@ import './Dropdown.css';
 function Dropdown() {
   return (
     <nav>   
-      <div className="logo">CodingNepal</div>  
+      <div className="logo">Academia Yorel</div>  
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">Features</a>
