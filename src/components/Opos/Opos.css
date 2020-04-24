@@ -17,6 +17,7 @@
 
 .thecard:hover{
   transform: rotateY(180deg);
+  
 }
 
 .thefront{
