@@ -9,6 +9,8 @@ import Opos from './components/Opos/Opos';
 
 import Slider from './components/slider/Slider';
 
+import Final from './components/final/Final';
+
 import './App.css';
 
 
@@ -32,17 +34,10 @@ function App() {
       <div>
         <Opos/>
       </div>  
-      <header className="contacto">
-        <Contacto/>        
-      </header>
-      
-
-
-
-
-
-    </div>
-    
+      <bottom className="final">
+        <Final/>        
+      </bottom>
+    </div>   
     
   );
 }
