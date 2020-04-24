@@ -10,28 +10,28 @@ export default [
 		title: 'Lorem Ipsum',
 		description:
 			'Aliquam vitae mi nec est congue ultricies. Donec at risus vitae nulla mollis tincidunt.',
-		button: 'Read More',
+		button: 'Lee más',
 		image: study1,		
 	},
 	{
 		title: 'Suspendisse vel diam metus. ',
 		description:
 			'rci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus',
-		button: 'Discover',
+		button: 'Accede',
 		image: study2,		
 	},
 	{
 		title: 'Phasellus vitae est lacus.',
 		description:
 			'Aliquam semper consequat ligula, ut ornare felis eleifend a. Donec scelerisque sed dui sit amet sollicitudin.',
-		button: 'Try now',
+		button: 'Pruébalo',
 		image: study3,		
 	},
 	{
 		title: 'Curabitur placerat',
 		description:
 			'Morbi vehicula dignissim velit vitae dignissim.',
-		button: 'Read More',
+		button: 'Contacto',
 		image: study4,		
 	},	
 ];

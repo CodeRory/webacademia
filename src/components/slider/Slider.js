@@ -18,7 +18,8 @@ function Autoplay() {
                     <div className="center">
                         <h1 id="titulo">{item.title}</h1>
                         <p id="descripcion">{item.description}</p>
-                        <button id="boton">{item.button}</button>
+                        <a href="" className="boton">{item.button}</a>
+                        
                     </div>
                 </div>
             ))}
