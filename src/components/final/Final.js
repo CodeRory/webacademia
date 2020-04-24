@@ -6,10 +6,7 @@ class final extends React.Component {
     
     render() {
         return(
-            <div>
-                
-                
-            </div>
+            <div>Todos los derechos reservados 2020</div>
         );
     }
 }

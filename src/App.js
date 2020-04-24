@@ -1,20 +1,9 @@
 import React from 'react';
-
 import Contacto from './components/contacto/Contacto';
-
 import Dropdown from './components/dropdown/Dropdown';
-
-
-import Opos from './components/Opos/Opos';
-
 import Slider from './components/slider/Slider';
-
+import Opos from './components/Opos/Opos';
 import Final from './components/final/Final';
-
-import './App.css';
-
-
-
 
 import './App.css';
 
