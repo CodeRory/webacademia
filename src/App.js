@@ -31,8 +31,18 @@ function App() {
       </div>
       <div>
         <Opos/>
-      </div>     
+      </div>  
+      <header className="contacto">
+        <Contacto/>        
+      </header>
+      
+
+
+
+
+
     </div>
+    
     
   );
 }
