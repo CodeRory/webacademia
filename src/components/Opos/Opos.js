@@ -12,23 +12,23 @@ function Opos(){
         <main className="page-content">
             <div className="card">
                 <div className="content">
-                    <h2 className="title">Mountain View</h2>
-                    <p className="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p><button class="btn">View Trips</button></div>
+                    <h2 className="title">Estudios 1</h2>
+                    <p className="copy">Aenean velit felis, interdum tristique odio eget, tempor convallis felis. Phasellus et dui purus.</p><button class="btn">Más información</button></div>
                 </div>
             <div className="card">
                 <div className="content">
-                    <h2 className="title">To The Beach</h2>
-                    <p className="copy">Plan your next beach trip with these fabulous destinations</p><button class="btn">View Trips</button></div>
+                    <h2 className="title">Estudios 2</h2>
+                    <p className="copy">Proin odio neque, mattis eu augue eu, lacinia lacinia augue. Aliquam euismod nibh quis purus euismod bibendum. </p><button class="btn">Suscríbete</button></div>
             </div>
             <div className="card">
                 <div className="content">
-                    <h2 className="title">Desert Destinations</h2>
-                    <p className="copy">It's the desert you've always dreamed of</p><button class="btn">Book Now</button></div>
+                    <h2 className="title">Estudios 3</h2>
+                    <p className="copy">Pellentesque sit amet luctus sem, sit amet mollis libero. Fusce in maximus lacus.</p><button class="btn">Reserva</button></div>
             </div>
             <div className="card">
                 <div className="content">
-                    <h2 className="title">Explore The Galaxy</h2>
-                    <p className="copy">Seriously, straight up, just blast off into outer space today</p><button class="btn">Book Now</button></div>
+                    <h2 className="title">Estudios 4</h2>
+                    <p className="copy">Maecenas vitae nisi sit amet purus egestas tincidunt sed condimentum arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p><button class="btn">Contacta</button></div>
             </div>
         </main>
     )
