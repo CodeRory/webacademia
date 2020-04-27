@@ -33,8 +33,17 @@
 .redes{
   float: left;
   margin-left: 200px;
-  margin-top: -49px;
-  padding-top: -40px;
-  
+  margin-top: -58px;
  
+  display: inline;
+}
+
+.redes ul {
+
+  display: inline;
+}
+.redes ul + ul{
+  margin-left:5px;
+  /* Separación de los iconos de las redes sociales */
+
 }

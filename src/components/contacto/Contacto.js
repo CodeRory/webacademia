@@ -14,9 +14,9 @@ class contacto extends React.Component {
                 <h1 style={{color: "orange"}}><img src={phone} alt="A phone" height="18vh" width="25vw" />555-55-55-55</h1>
                 <h2 id="horario">L-V 9:00 - 19:00</h2>
                 <ul className="redes">
-                    <ul><a href="" ><img src={tw}  alt="fb" height="30vh" width="30vw" /></a></ul>                    
-                    <ul><img src={insta}  alt="fb" height="30vh" width="30vw" /></ul>
-                    <ul><img src={fb}  alt="fb" height="30vh" width="30vw" /></ul>            
+                    <ul><a href=""><img src={tw}  alt="fb" height="38vh" width="38vw"/></a></ul>                    
+                    <ul><a href=""><img src={insta}  alt="fb" height="38vh" width="38vw"/></a></ul>
+                    <ul><a href=""><img src={fb}  alt="fb" height="38vh" width="38vw" /></a></ul>            
                 </ul>    
             </div>
         );
