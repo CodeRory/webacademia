@@ -16,7 +16,7 @@ export default [
 	{
 		title: 'Suspendisse vel diam metus. ',
 		description:
-			'rci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus',
+			'Irci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus',
 		button: 'Accede',
 		image: study2,		
 	},
