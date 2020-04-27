@@ -21,8 +21,9 @@
 #horario{
 
   padding-top: 5px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
   padding-left: 7px
+
 
 
 
@@ -30,8 +31,10 @@
 
 
 .redes{
-  align-items: right;
-  justify-content: right;
-
-
+  float: left;
+  margin-left: 200px;
+  margin-top: -49px;
+  padding-top: -40px;
+  
+ 
 }

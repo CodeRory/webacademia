@@ -57,7 +57,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: cyan;    
+    color:rgb(121, 5, 5);    
     border-radius: 5px;
     box-shadow: 0 0 5px #33fff, /* en teoria esto era para darle el efecto de los bordes */
                 0 0 5px #66fff;
@@ -67,14 +67,14 @@ nav ul li a:hover{
 
 
 nav ul ul li a:hover{
-    color: cyan;
+    color: rgb(121, 5, 5);
     box-shadow: none;    
 }
 
 nav ul ul{
     position: absolute;
     top: 90px;
-    border-top: 3px solid cyan; /* El color del borde superior cuando se despliega el menú */
+    border-top: 3px solid rgb(121, 5, 5); /* El color del borde superior cuando se despliega el menú */
     opacity: 0;
     visibility: hidden;
     transition: top .3s;   /* La diferencia entre los 90px de este y los 70 del siguiente es el saltito que da al abrirlo */
