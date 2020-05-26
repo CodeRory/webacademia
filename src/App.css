@@ -1,31 +1,3 @@
-
-
-
-.button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  right:0px;
-  width: 200px;
-  position: relative;
-  display: inline-block;
-  text-decoration: none;  
-  border-bottom-style: none;
-  border-right-style: none;
-  background-color:#ff3232 ;
-  padding:15px;
-  border-radius:5px;
-  font-weight:bold;
-  color:white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-}
-
-
-#slidercss {
-  height: 34px;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
  :root {
 	 --d: 700ms;
@@ -33,38 +5,15 @@
 	 --font-sans: 'Rubik', sans-serif;
 	 --font-serif: 'Cardo', serif;
 }
- * {
-	 box-sizing: border-box;
-}
- html, body {
-	 height: 100%;
-}
- body {
-	 display: grid;
-	 place-items: center;
-}
- .page-content {
-	 display: grid;
-	 grid-gap: 1rem;
-	 padding: 1rem;
-	 max-width: 1500px;
-	 margin: 0 auto;
-	 font-family: var(--font-sans);
-}
 
-
-.final{
-  background: #200122;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  display: flex;
-  flex-direction: center;
-  justify-content: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-indent: 10pt;  
-  font-size: 20px;
-  padding: 20px;
-  color: white;
-
-
+.App {
+	width: 90%; /* Deja márgenes (hay que poner margin auto también) a los lados sin tocar el drawer */
+	margin: 0 auto; /* Hace posible los márgenes y que la web se centre */  
+	max-width: 3100px;/*  El ancho máximo que tendrá nuestra web, por muy grande que se vea la pantalla, de ésta manera no se deformarán nuestro elementos al alargarse demasiado */
+	-webkit-box-shadow: 0px 6px 15px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 6px 15px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 6px 15px 4px rgba(0,0,0,0.75);
+	margin-top: 0.01%;
 }
+  
+

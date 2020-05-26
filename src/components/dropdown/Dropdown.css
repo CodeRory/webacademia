@@ -1,59 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
+
+.dropdown {    
     box-sizing: border-box;
     z-index: 3;    
-}
-
-/* Recordar que aquí no hay body */
-
-nav{
-    background: #1b1b1b;
+    padding-right: 33%;  
+    padding-left: 27%; 
     
+    margin-top: 5.6%;
+    background: #1b1b1b;  
+    margin-top: 5.3%;
+    padding-top: 0.1%;
+    display: absolute;
     
-}
-
-.logo{
-    float:left;
-    color: white;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: 70px;
-    padding-left: 60px;
-    
-
 }
 
 nav:after{
     content: '';
     clear: both;
-    display: table;
-    
+    display: table;    
 }
 
 nav ul{
-    float: right;
-    list-style: none;
-    margin-right: 40px;
+    list-style: none;    
     position: relative;
+    margin: 0.01%;
+    padding: 0.01%;
+    box-sizing: border-box;
+    z-index: 3;        
+    margin-right: 0;
     
 }
 
 nav ul li{
-    float: left;
+    
     display: inline-block;
     background: #1b1b1b;
-    margin: 0 5px;
-    
+      
 }
 
 nav ul li a{
     color: white;
     text-decoration: none;
-    line-height: 70px;
-    font-size: 18px;
-    padding: 8px 15px;
-    
+    line-height: 380%;
+    font-size: 125%;
+    padding-top: 10%;    
+    padding-bottom: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 nav ul li a:hover{
@@ -61,7 +53,6 @@ nav ul li a:hover{
     border-radius: 5px;
     box-shadow: 0 0 5px #33fff, /* en teoria esto era para darle el efecto de los bordes */
                 0 0 5px #66fff;
-
 }
 
 
@@ -73,7 +64,7 @@ nav ul ul li a:hover{
 
 nav ul ul{
     position: absolute;
-    top: 90px;
+    top: 130%;
     border-top: 3px solid rgb(121, 5, 5); /* El color del borde superior cuando se despliega el menú */
     opacity: 0;
     visibility: hidden;
@@ -83,45 +74,67 @@ nav ul ul{
 
 nav ul ul ul{
     border-top: none;
-    
-
-
 }
 
 nav ul li:hover > ul{
-    top: 70px;
+    
+    top: 100%;
     opacity: 1;
     visibility: visible;
-    
 
 }
 
 nav ul ul li{
     position: relative;
-    margin: 0px;
+    
+    margin: 0.01%;
     width: 150px;
     float: none;
     display: list-item;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    
+    border-bottom: 1px solid rgba(0,0,0,0.3);    
 }
 
 nav ul ul li a {
-    line-height: 50px;
+    line-height: 50px;   
     
 
 }
 
 nav ul ul ul li{
     position: relative;
-    top: -70px;
-    left: 150px;
+    top: -40px; /* A la altura que sale las secciones del More */
+    left: 150px; /* A la distancia hacia la derecha que salen las secciones del More */
     
 }
 
 .fa-plus{
     margin-left: 40px;
-    font-size: 15px;
-    
+    font-size: 15px;   
 
 }
+
+
+
+
+
+/* -------------MOVIL----------------- */
+
+@media (max-width: 700px) {
+    .Header {
+      grid-template-areas: "menu";
+    }
+    .dropdown {
+      grid-template-rows: repeat(4, auto);
+      grid-template-columns: none;
+      grid-row-gap: 20px;
+  
+      padding: 30px 0 30px;
+      background: rgba(40, 44, 47, 0.95);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      margin-top: 20.7%;
+    }
+  
+  }

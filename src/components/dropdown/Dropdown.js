@@ -3,35 +3,32 @@ import './Dropdown.css';
 
 function Dropdown() {
   return (
-    <nav>   
-      <div className="logo">Academia Yorel</div>  
-        <ul>
-          <li><a href="">Profesorado</a></li>
-          <li><a href="">Aula Virtual</a>
+    <nav className='dropdown'>         
+        <ul className='fourSections'>
+          <li><a href="/#">Our teachers</a></li>
+          <li><a href="/#">Virtual classroom</a>
             <ul>
-              <li><a href="">Temario</a></li>
-              <li><a href="">Grupos</a></li>
-              <li><a href="">Horario</a></li>            
+              <li><a href="/#">Syllabus</a></li>
+              <li><a href="/#">Grups</a></li>
+              <li><a href="/#">Schedule</a></li>            
             </ul>         
-          </li>
-          <li>
-            <li><a href="">Servicios</a>
-              <ul>
-                <li><a href="">Oposiciones</a></li>
-                <li><a href="">Inglés</a></li>
-                <li>
-                  <a href="">More
-                  <span className="fa fa-plus"></span></a> 
-                  <ul>
-                    <li><a href="">Refuerzo 1</a></li>
-                    <li><a href="">Refuerzo 2</a></li>
-                    <li><a href="">Refuerzo 3</a></li>
-                  </ul>                 
-                  </li>            
-              </ul>         
-            </li>         
-          </li>              
-          <li><a href="">Contacto</a></li>    
+          </li>          
+          <li><a href="/#">Services</a>
+            <ul>
+              <li><a href="/#">Studies</a></li>
+              <li><a href="/#">Languages</a></li>
+              <li>
+                <a href="/#">More
+                <span className="fa fa-plus"></span></a> 
+                <ul>
+                  <li><a href="/#">Section 1</a></li>
+                  <li><a href="/#">Section 2</a></li>
+                  <li><a href="/#">Section 3</a></li>
+                </ul>                 
+              </li>            
+            </ul>         
+          </li>                      
+          <li><a href="/#">Contact</a></li>    
         </ul>    
     </nav>
 

@@ -1,0 +1,44 @@
+.bar2 {
+    display: flex;
+    flex-direction: row;
+    background: #200122;  
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  
+    background: linear-gradient(to right, #6f0000, #200122);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 10pt;  
+    font-size: 20px;  
+    color: white;      
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;    
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 2.4%; 
+         
+}
+
+.socialmedia a {    
+    color: white;
+}
+
+#rory {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 8%;
+    font-family: Porpora;
+}
+
+@media (max-width: 700px) {
+    .socialmedia {
+        margin-left: -50px;
+  }
+
+}

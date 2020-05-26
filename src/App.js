@@ -1,24 +1,35 @@
 import React from 'react';
-import Contacto from './components/contacto/Contacto';
-import Dropdown from './components/dropdown/Dropdown';
-import Slider from './components/slider/Slider';
+/* import Dropdown from './components/dropdown/Dropdown'; */
+
 import Opos from './components/Opos/Opos';
 import Final from './components/final/Final';
+import PersistentDrawerLeft from './components/Drawer/Drawer';
+
+import Slideshow from './components/Slide/Slide';
+
+
+import Sections from './components/Sections/Sections';
+
 
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <Contacto/>        
-      </header>
-      <div>
-        <Dropdown/>
-       
+      <div id="header">
+        <div className='first'>
+          <PersistentDrawerLeft />     
+        </div>  
+        <div className='second'>
+          <Sections />
+        </div>
       </div>
       <div>
-       <Slider id="slidercss"/>
+        <Slideshow />
+      </div>
+      <div>
+      
       </div>
       <div>
         <Opos/>
