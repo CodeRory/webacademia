@@ -5,6 +5,8 @@ import { CSSTransition } from "react-transition-group";
 
 
 
+
+
 export default function Sections() {
   const [isNavVisible, setNavVisibility] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);

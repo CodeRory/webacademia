@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-animated-slider": "^2.0.0",
     "react-dom": "^16.13.1",
+    "react-modal-login": "^1.4.5",
     "react-responsive-carousel": "^3.2.7",
     "react-scripts": "3.4.1",
     "react-slideshow-image": "^1.4.2"
