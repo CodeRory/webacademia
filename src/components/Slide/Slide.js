@@ -8,11 +8,7 @@ import study4 from '../Slide/study4.png';
 
 import '../Slide/Slide.css';
 
-const slideImages = [
-  {study1},
-  {study2},
-  {study3}
-];
+
 
 const properties = {
   duration: 4000,
