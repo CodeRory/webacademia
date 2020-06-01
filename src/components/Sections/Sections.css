@@ -63,12 +63,13 @@
    text-shadow: 1px 1px 15px #000000;
     cursor: pointer;
     transition: 70ms;
-    width: 100px;
+    width: 70px;
     height: 40px;
     margin-top: 2%;
     justify-self: end;
     margin-right: 7%; 
-    font-family: Porpora;   
+    font-family: Porpora;  
+    padding-right: 70px; 
   }
   
   #myButton:active {
@@ -124,7 +125,7 @@
       border-radius: 50px;
       cursor: pointer;
       transition: 70ms;
-      width: 100px;
+      width: 70px;
       height: 40px;
       margin-top: 4%;
       justify-self: start;

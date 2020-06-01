@@ -13,9 +13,20 @@ import study2 from '../Slide/study2.png';
 import study3 from '../Slide/study3.png';
 import study4 from '../Slide/study4.png';
 
+
+
 import '../Slide/Slide.css';
 
-
+const style = (theme) => ({
+  notchedOutline: {
+      borderColor: 'black',
+      borderWidth: 1,
+      '&:hover': {
+          borderColor: 'black',
+          borderWidth: 2
+      },
+  }
+});
 
 
 function FormDialog(props) {
@@ -34,26 +45,37 @@ function FormDialog(props) {
       <button id='mySecButton' onClick={handleClickOpen} style={{fontFamily: 'Porpora'}}>
         {props.title}
       </button>
-      <Dialog open={open} onClose={handleClose} id="titleDialogSlider" style={{fontFamily: 'Porpora'}}>
-        <DialogTitle id="titleDialogSliderText" style={{fontFamily: 'Porpora'}}>Template</DialogTitle>
+      <Dialog open={open} onClose={handleClose} id="titleDialogSlider" >
+        <DialogTitle id="titleDialogSliderText" DialogTitleProps={{ style: { fontFamily: 'Porpora' } }}>Template</DialogTitle>
         <DialogContent>
-          <DialogContentText>
+          <DialogContentText id='subDialogSliderText'>
             This web shows how could be a website for a business, in this case, an academy. 
             Maybe in these sections you would be ask for your email. 
           </DialogContentText>
           <TextField 
             autoFocus
-            margin="dense"            
-            label="Email Address"
+            /* input + label props, podría ser sólo inputprops */
+            InputLabelProps={{ style: { fontFamily: 'Porpora', 
+                                        color:'black', 
+                                        '&:hover': {
+                                          borderColor: 'black',
+                                          borderWidth: 2
+                                          },  
+                                      } }}           
+            
+            label="Enter your email please"
             type="email"
             fullWidth
+            hoverColor='black'            
+            id='textFieldSliderDialog'
+                
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
+          <Button onClick={handleClose} id="myButtonDialogSlider" >
             Cancel
           </Button>
-          <Button onClick={handleClose} color="primary">
+          <Button onClick={handleClose} id="myButtonDialogSlider">
             Subscribe
           </Button>
         </DialogActions>
