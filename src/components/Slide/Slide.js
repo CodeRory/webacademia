@@ -50,15 +50,15 @@ function FormDialog(props) {
           </DialogContentText>
           <TextField 
             autoFocus
-            /* input + label props, podría ser sólo inputprops */
+                  
             InputLabelProps={{ style: { fontFamily: 'Porpora', 
                                         color:'black',               
                                          
-                                        "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
+                                        "&:hover:not($disabled):not(focused):not($error) $notchedOutline": {
                                           border: "2px solid",
                                           borderColor: "black !important",
                                         },
-                                        '&$focused': {
+                                        '&focused': {
                                             color: 'black',
                                           },
                                         },
@@ -67,7 +67,7 @@ function FormDialog(props) {
                                           MuiInputLabel: {
                                             root: {
                                               color: "black",
-                                              "&$focused": {
+                                              "&focused": {
                                                 color: "black"
                                               }
                                             }
