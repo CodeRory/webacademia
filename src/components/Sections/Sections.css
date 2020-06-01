@@ -149,87 +149,85 @@
     transform: scale(0.5);
     transition: opacity 350ms, transform 350ms;
   }
+
+
+#textLogInFirst {
+  border: 'none';
+  color: 'white';
+  text-emphasis: none;
+}
   
+
+/* -------------LogIn------------------------------------- */
+  
+
+#simple-dialog-title {
+  background-color: rgb(146, 25, 25);
+  color: white;
+  max-width: 400px;
+  max-height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: solid 0.1px;
+  font-family: 'Porpora' !important;
+  
+}
+
+#emailsLogIn{
+  background-color:rgb(146, 25, 25);
+  color: white;
+  max-width: 400px;
+  max-height: 200px;
+
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Porpora';
+  
+
+}
+
+#inputUsername {
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 6px;
+  height: 27px;
+  font-family: 'Porpora';
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cardFooter {
+  background-color:rgb(146, 25, 25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
+  font-family: 'Porpora';
+
+
+}
+
+#singUp {
+  color: white;
+  font-family: 'Porpora';
+}
 
 
   
-
-/* ---------------LogIn---------------------- */
-
-.container{
-  height: 100%;
-  align-content: center;
-  }
-  
-  .card{
-  height: 370px;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 400px;
-  background-color: rgba(0,0,0,0.5) !important;
-  }
-  
-  .social_icon span{
-  font-size: 60px;
-  margin-left: 10px;
-  color: #FFC312;
-  }
-  
-  .social_icon span:hover{
-  color: white;
-  cursor: pointer;
-  }
-  
-  .card-header h3{
-  color: white;
-  }
-  
-  .social_icon{
-  position: absolute;
-  right: 20px;
-  top: -45px;
-  }
-  
-  .input-group-prepend span{
-  width: 50px;
-  background-color: #FFC312;
-  color: black;
-  border:0 !important;
-  }
-  
-  input:focus{
-  outline: 0 0 0 0  !important;
-  box-shadow: 0 0 0 0 !important;
-  
-  }
-  
-  .remember{
-  color: white;
-  }
-  
-  .remember input
-  {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
-  margin-right: 5px;
-  }
-  
-  .login_btn{
-  color: black;
-  background-color: #FFC312;
-  width: 100px;
-  }
-  
-  .login_btn:hover{
-  color: black;
-  background-color: white;
-  }
-  
-  .links{
-  color: white;
-  }
-  
-  .links a{
-  margin-left: 4px;
-  }
