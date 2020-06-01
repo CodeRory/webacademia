@@ -5,10 +5,9 @@ import { CSSTransition } from "react-transition-group";
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
-import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
 
-import ResponsiveDialog from '../Sections/FullDialog';
+
 
 
 function SimpleDialog(props) {  
@@ -21,7 +20,7 @@ function SimpleDialog(props) {
   return (
     <Dialog onClose={handleClose} open={open} >
       
-      <h2 id="titleLogIn"  style={{ fontFamily: 'Porpora !important'}}  >Log in with your account</h2>
+      <h2 id="titleLogIn"  >Log in with your account</h2>
       
       
       <List id='emailsLogIn'>
