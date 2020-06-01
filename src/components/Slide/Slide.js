@@ -39,7 +39,7 @@ function FormDialog(props) {
         {props.title}
       </button>
       <Dialog open={open} onClose={handleClose} id="titleDialogSlider" >
-        <DialogTitle id="titleDialogSliderText" DialogTitleProps={{ style: { fontFamily: 'Porpora' } }}>Template</DialogTitle>
+        <DialogTitle id="titleDialogSliderText" DialogTitle={{ style: { fontFamily: 'Porpora !important'} }}>Template</DialogTitle>
         <DialogContent>
           <DialogContentText id='subDialogSliderText'>
             This web shows how could be a website for a business, in this case, an academy. 
@@ -53,7 +53,8 @@ function FormDialog(props) {
                                          
                                         "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
                                           border: "2px solid",
-                                          borderColor: "black",}
+                                          borderColor: "black !important",
+                                        },
                                       } }}           
             
             label="Enter your email please"

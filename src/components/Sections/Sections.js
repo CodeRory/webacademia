@@ -21,7 +21,7 @@ function SimpleDialog(props) {
   return (
     <Dialog onClose={handleClose} open={open} style={{fontFamily: 'Porpora !important'}} >
       
-      <DialogTitle id="simple-dialog-title" style={{fontFamily: 'Porpora !important'}} >Log in with your account</DialogTitle>
+      <DialogTitle id="simple-dialog-title" DialogTitleProps={{ style: { fontFamily: 'Porpora !important'} }} >Log in with your account</DialogTitle>
       
       
       <List id='emailsLogIn'>
