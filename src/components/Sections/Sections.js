@@ -10,6 +10,7 @@ import Dialog from '@material-ui/core/Dialog';
 
 
 
+
 function SimpleDialog(props) {  
   const { onClose, selectedValue, open } = props;
 
@@ -122,7 +123,7 @@ export default function Sections() {
   const toggleNav = () => {
     setNavVisibility(!isNavVisible);
   };
-
+  
   return (
     <header className="Header">
       <button id='myButton'><SimpleDialogDemo /></button>

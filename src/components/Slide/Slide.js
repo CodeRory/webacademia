@@ -33,6 +33,9 @@ function FormDialog(props) {
     setOpen(false);
   };
 
+
+  
+  
   return (
     <div>
       <button id='mySecButton' onClick={handleClickOpen} style={{fontFamily: 'Porpora'}}>
@@ -49,20 +52,35 @@ function FormDialog(props) {
             autoFocus
             /* input + label props, podría ser sólo inputprops */
             InputLabelProps={{ style: { fontFamily: 'Porpora', 
-                                        color:'black',
+                                        color:'black',               
                                          
                                         "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
                                           border: "2px solid",
                                           borderColor: "black !important",
                                         },
-                                      } }}           
+                                        '&$focused': {
+                                            color: 'black',
+                                          },
+                                        },
+                                        focused: {color: 'black'},
+                                        overrides: {
+                                          MuiInputLabel: {
+                                            root: {
+                                              color: "black",
+                                              "&$focused": {
+                                                color: "black"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      } }          
             
             label="Enter your email please"
             type="email"
-            fullWidth
-            hoverColor='black'            
+            fullWidth         
             id='textFieldSliderDialog'
-            multiline='false'
+            
+           
                 
           />
         </DialogContent>
