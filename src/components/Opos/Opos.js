@@ -26,6 +26,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     marginLeft: theme.spacing(2),
     flex: 1,
+    fontFamily: 'Porpora',
+    textAlign: 'center',
+    
   },
 }));
 
@@ -51,17 +54,14 @@ function FullScreenDialog(props) {
         {props.title}
       </button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
-        <AppBar className={classes.appBar}>
+        <AppBar className={classes.appBar} id='fullDialogBar'>
           <Toolbar>
             <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
               <CloseIcon />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              Sound
-            </Typography>
-            <Button autoFocus color="inherit" onClick={handleClose}>
-              save
-            </Button>
+            <Typography variant="h4" className={classes.title}>
+                Template
+            </Typography>            
           </Toolbar>
         </AppBar>
         <List>

@@ -162,7 +162,8 @@
   
 
 #simple-dialog-title {
-  background-color: rgb(146, 25, 25);
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);  
+  background: linear-gradient(to right, #6f0000, #200122);
   color: white;
   max-width: 400px;
   max-height: 70px;
@@ -175,7 +176,8 @@
 }
 
 #emailsLogIn{
-  background-color:rgb(146, 25, 25);
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);  
+  background: linear-gradient(to right, #6f0000, #200122);
   color: white;
   max-width: 400px;
   max-height: 200px;
@@ -212,7 +214,8 @@
 
 
 .cardFooter {
-  background-color:rgb(146, 25, 25);
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);  
+  background: linear-gradient(to right, #6f0000, #200122);
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -83,13 +83,7 @@
 	 text-transform: none;
 }
 
-#title {
-	font-size: 1.3rem;
-	font-weight: bold;
-	line-height: 1.2;
-	color: white;
-	text-transform: none;
-}
+
  .copy {
 	 font-family: var(--Porpora;);
 	 font-size: 1.125rem;
@@ -175,4 +169,13 @@
 	.page-content {
 		grid-template-columns: repeat(4, 1fr);
    }
+}
+
+
+
+/* -----------------FullDialog------------------------------------------------------ */
+
+#fullDialogBar {
+	background: -webkit-linear-gradient(to right, #6f0000, #200122);  
+    background: linear-gradient(to right, #6f0000, #200122)
 }
