@@ -1,5 +1,12 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 import study1 from '../Slide/study1.png';
 import study2 from '../Slide/study2.png';
@@ -7,6 +14,53 @@ import study3 from '../Slide/study3.png';
 import study4 from '../Slide/study4.png';
 
 import '../Slide/Slide.css';
+
+
+
+
+function FormDialog(props) {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <div>
+      <button id='mySecButton' onClick={handleClickOpen} style={{fontFamily: 'Porpora'}}>
+        {props.title}
+      </button>
+      <Dialog open={open} onClose={handleClose} id="titleDialogSlider" style={{fontFamily: 'Porpora'}}>
+        <DialogTitle id="titleDialogSliderText" style={{fontFamily: 'Porpora'}}>Template</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            This web shows how could be a website for a business, in this case, an academy. 
+            Maybe in these sections you would be ask for your email. 
+          </DialogContentText>
+          <TextField 
+            autoFocus
+            margin="dense"            
+            label="Email Address"
+            type="email"
+            fullWidth
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary">
+            Cancel
+          </Button>
+          <Button onClick={handleClose} color="primary">
+            Subscribe
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </div>
+  );
+}
 
 
 
@@ -34,7 +88,7 @@ const Slideshow = () => {
                   <h4 className='sliderSub'>Quisque ut orci ornare, euismod eros non, lacinia diam. In ultrices suscipit magna, eget dignissim nunc commodo a.</h4>
                 </div>
                 <div id='buttonContainer'>
-                  <button id='mySecButton'>Contact</button>
+                  <FormDialog title='Contact' />
                 </div>
               </div>
             </div>
@@ -47,7 +101,7 @@ const Slideshow = () => {
               <h4 className='sliderSub'>Quisque sodales sem a sem egestas, a varius nisi luctus. Aliquam erat volutpat. Morbi cursus iaculis.</h4>
               </div>
               <div id='buttonContainer'>
-                  <button id='mySecButton'>Subscribe</button>
+                  <FormDialog title='Subscribe' />
                 </div>
             </div>
             </div>
@@ -60,7 +114,7 @@ const Slideshow = () => {
               <h4 className='sliderSub'>Duis interdum tristique ante, eget imperdiet turpis pulvinar at. Mauris laoreet felis at neque viverra, sit amet malesuada enim malesuada.</h4>
               </div>
               <div id='buttonContainer'>
-                  <button id='mySecButton'>Reserve</button>
+                  <FormDialog title='Reserve' />
                 </div>
             </div>
             </div>            
@@ -73,7 +127,7 @@ const Slideshow = () => {
               <h4 className='sliderSub'>Aenean facilisis a felis eget aliquet. Vivamus eu pulvinar nibh, eu tristique velit. Nullam rutrum, justo ac porta scelerisque.</h4>
               </div>
               <div id='buttonContainer'>
-                  <button id='mySecButton'>More info</button>
+                <FormDialog title='More info' />
                 </div>
             </div>
             </div>            
