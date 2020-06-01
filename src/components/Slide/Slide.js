@@ -39,7 +39,7 @@ function FormDialog(props) {
         {props.title}
       </button>
       <Dialog open={open} onClose={handleClose} id="titleDialogSlider" >
-        <DialogTitle id="titleDialogSliderText" DialogTitle={{ style: { fontFamily: 'Porpora !important'} }}>Template</DialogTitle>
+        <h2 id="titleDialogSliderText" DialogTitle={{ style: { fontFamily: 'Porpora !important'} }}>Template</h2>
         <DialogContent>
           <DialogContentText id='subDialogSliderText'>
             This web shows how could be a website for a business, in this case, an academy. 

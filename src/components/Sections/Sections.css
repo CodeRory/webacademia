@@ -162,17 +162,20 @@
 /* -------------LogIn------------------------------------- */
   
 
-#simple-dialog-title {
+#titleLogIn {
   background: -webkit-linear-gradient(to right, #6f0000, #200122);  
   background: linear-gradient(to right, #6f0000, #200122);
   color: white;
   max-width: 400px;
-  max-height: 70px;
+  max-height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-bottom: solid 0.1px;
   font-family: 'Porpora' !important;
+  
+  padding:20px;
+  margin: 0;
   
 }
 
