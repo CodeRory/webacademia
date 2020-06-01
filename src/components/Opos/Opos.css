@@ -79,6 +79,16 @@
 	 font-size: 1.3rem;
 	 font-weight: bold;
 	 line-height: 1.2;
+	 color: white;
+	 text-transform: none;
+}
+
+#title {
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 1.2;
+	color: white;
+	text-transform: none;
 }
  .copy {
 	 font-family: var(--Porpora;);

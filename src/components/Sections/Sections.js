@@ -3,34 +3,20 @@ import React, { useState, useEffect } from "react";
 import '../Sections/Sections.css';
 import { CSSTransition } from "react-transition-group";
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
-import { blue } from '@material-ui/core/colors';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
 
+import ResponsiveDialog from '../Sections/FullDialog';
 
-
-
-
-const emails = ['example1@gmail.com', 'example2@gmail.com'];
-const useStyles = makeStyles({
-  avatar: {
-    backgroundColor: blue[100],
-    color: blue[600],
-  },
-});
 
 function SimpleDialog(props) {  
   const { onClose, selectedValue, open } = props;
 
   const handleClose = () => {
     onClose(selectedValue);
-  };
-
-  
+  };  
 
   return (
     <Dialog onClose={handleClose} open={open} style={{fontFamily: 'Porpora !important'}} >
@@ -82,9 +68,10 @@ SimpleDialog.propTypes = {
   selectedValue: PropTypes.string.isRequired,
 };
 
+
 function SimpleDialogDemo() {
   const [open, setOpen] = React.useState(false);
-  const [selectedValue, setSelectedValue] = React.useState(emails[1]);
+  
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -92,7 +79,7 @@ function SimpleDialogDemo() {
 
   const handleClose = (value) => {
     setOpen(false);
-    setSelectedValue(value);
+    
   };
 
   return (
@@ -100,19 +87,10 @@ function SimpleDialogDemo() {
       <Button onClick={handleClickOpen} style={{color: 'white', textTransform: 'none', fontFamily: 'Porpora'}} >
         Log In
       </Button>
-      <SimpleDialog selectedValue={selectedValue} open={open} onClose={handleClose} />
+      <SimpleDialog open={open} onClose={handleClose} />
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
 
 
 
