@@ -17,16 +17,9 @@ import study4 from '../Slide/study4.png';
 
 import '../Slide/Slide.css';
 
-const style = (theme) => ({
-  notchedOutline: {
-      borderColor: 'black',
-      borderWidth: 1,
-      '&:hover': {
-          borderColor: 'black',
-          borderWidth: 2
-      },
-  }
-});
+
+
+
 
 
 function FormDialog(props) {
@@ -56,11 +49,11 @@ function FormDialog(props) {
             autoFocus
             /* input + label props, podría ser sólo inputprops */
             InputLabelProps={{ style: { fontFamily: 'Porpora', 
-                                        color:'black', 
-                                        '&:hover': {
-                                          borderColor: 'black',
-                                          borderWidth: 2
-                                          },  
+                                        color:'black',
+                                         
+                                        "&:hover:not($disabled):not($focused):not($error) $notchedOutline": {
+                                          border: "2px solid",
+                                          borderColor: "black",}
                                       } }}           
             
             label="Enter your email please"
@@ -68,6 +61,7 @@ function FormDialog(props) {
             fullWidth
             hoverColor='black'            
             id='textFieldSliderDialog'
+            multiline='false'
                 
           />
         </DialogContent>
