@@ -179,3 +179,13 @@
 	background: -webkit-linear-gradient(to right, #6f0000, #200122);  
     background: linear-gradient(to right, #6f0000, #200122)
 }
+
+#textFullDialog {
+	text-align: center;
+	margin-top: 15%;
+	font-family: Porpora;
+	font-size: 1.5vmax;
+
+
+
+}

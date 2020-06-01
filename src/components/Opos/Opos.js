@@ -64,15 +64,9 @@ function FullScreenDialog(props) {
             </Typography>            
           </Toolbar>
         </AppBar>
-        <List>
-          <ListItem button>
-            <ListItemText primary="Phone ringtone" secondary="Titania" />
-          </ListItem>
-          <Divider />
-          <ListItem button>
-            <ListItemText primary="Default notification ringtone" secondary="Tethys" />
-          </ListItem>
-        </List>
+        <div id='textFullDialog'>
+            This is just a template. Here you would find a new section of this website.         
+        </div>
       </Dialog>
     </div>
   );
