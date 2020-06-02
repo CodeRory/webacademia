@@ -49,7 +49,7 @@ function FormDialog(props) {
             Maybe in these sections you would be ask for your email. 
           </DialogContentText>
           <TextField 
-            autoFocus
+            
                   
             InputLabelProps={{ style: { fontFamily: 'Porpora', 
                                         color:'black',               

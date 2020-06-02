@@ -239,4 +239,46 @@
 }
 
 
-  
+/* ---SectionDialogs---------------------- */  
+
+#sectionDialogTitle {
+  font-family: Porpora;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 15px;
+
+
+}
+
+#contentSectionDialog {
+  font-family: Porpora;
+  text-align: center;
+  margin-top: 5%;
+
+
+}
+
+
+#buttonSectionDialog {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  font-family: Porpora;
+
+}
+#buttonSectionDialog:hover {
+  background-color: #0d0d0d;
+}
+#buttonSectionDialog:focus {
+  outline: 1px dashed rgb(99, 24, 24);
+  outline-offset: 3px;
+}

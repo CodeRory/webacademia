@@ -26,7 +26,7 @@ function AlertDialog(props) {
   return (
     <div>
       <Button id='navSections' onClick={handleClickOpen2}>
-        {props.title}
+        {props.section}
       </Button>
       <Dialog
         open={open2}
@@ -34,20 +34,16 @@ function AlertDialog(props) {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
+        <h2 id='sectionDialogTitle'>{props.title}</h2>
         <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending anonymous location data to
-            Google, even when no apps are running.
+          <DialogContentText id="contentSectionDialog">
+            Here you would be sent to another section of this business website.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose2} color="primary">
-            Disagree
-          </Button>
-          <Button onClick={handleClose2} color="primary" autoFocus>
-            Agree
-          </Button>
+          <button id='buttonSectionDialog' onClick={handleClose2} >
+            Ok
+          </button>
         </DialogActions>
       </Dialog>
     </div>
@@ -165,14 +161,10 @@ export default function Sections() {
         unmountOnExit
       >
         <nav className="Nav">
-          <AlertDialog title='Teachers' />
-          <AlertDialog title='Studies' />
-          <AlertDialog title='Virtual Classroom' />
-          <AlertDialog title='Syllabus' />
-          
-          
-          
-         
+          <AlertDialog section='Teachers' title='Teachers' />
+          <AlertDialog section='Studies' title='Studies' />
+          <AlertDialog section='Virtual Classroom' title='Virtual Classroom' />
+          <AlertDialog section='Syllabus' title='Syllabus' />  
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger" style={{color: 'white'}}>
