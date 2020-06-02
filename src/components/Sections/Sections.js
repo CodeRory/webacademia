@@ -6,9 +6,53 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 
+function AlertDialog(props) {
+  const [open2, setOpen2] = React.useState(false);
 
+  const handleClickOpen2 = () => {
+    setOpen2(true);
+  };
+
+  const handleClose2 = () => {
+    setOpen2(false);
+  };
+
+  return (
+    <div>
+      <Button id='navSections' onClick={handleClickOpen2}>
+        {props.title}
+      </Button>
+      <Dialog
+        open={open2}
+        onClose={handleClose2}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            Let Google help apps determine location. This means sending anonymous location data to
+            Google, even when no apps are running.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose2} color="primary">
+            Disagree
+          </Button>
+          <Button onClick={handleClose2} color="primary" autoFocus>
+            Agree
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </div>
+  );
+}
 
 
 function SimpleDialog(props) {  
@@ -19,45 +63,32 @@ function SimpleDialog(props) {
   };  
 
   return (
-    <Dialog onClose={handleClose} open={open} >
-      
-      <h2 id="titleLogIn"  >Log in with your account</h2>
-      
-      
-      <List id='emailsLogIn'>
-        
+    <Dialog onClose={handleClose} open={open} >      
+      <h2 id="titleLogIn">Log in with your account</h2>      
+      <List id='emailsLogIn'>        
         <div id="inputUsername">          
           🌍<input type="text" id="inputUsername" placeholder="Username"/>
-        </div>
-       
+        </div>       
         <div className="inputUsername">						
 						🔑<input type="password" id="inputUsername" placeholder="Password"/>
 				</div>
-
         <div className="checkboxPassword">            
             <input type="checkbox" id="cbox2" value="second_checkbox"/> <label for="cbox2">Remember me</label>
-        </div>
-        
+        </div>        
         <div className="buttonLogIn">
 						<input type="submit" value="Login" className="btn float-right login_btn"/>
 					</div>        
-      </List>
-      
-      
+      </List>      
       <div>
         <div className="cardFooter">
           <div id="singUp" style={{fontFamily: 'Porpora'}}>
             Don't have an account?<a href="/#" style={{color: 'white', marginLeft: '4px', fontFamily: 'Porpora'}}>Sign Up</a>
           </div>
-        <div id="forgot">
-          <a href="/#" style={{color: 'white', marginLeft: '4px', fontFamily: 'Porpora'}}>Forgot your password?</a>
+          <div id="forgot">
+            <a href="/#" style={{color: 'white', marginLeft: '4px', fontFamily: 'Porpora'}}>Forgot your password?</a>
+          </div>
         </div>
       </div>
-      
-      
-      
-      </div>
-      
     </Dialog>
   );
 }
@@ -134,10 +165,11 @@ export default function Sections() {
         unmountOnExit
       >
         <nav className="Nav">
-          <a href="/">Teachers</a>
-          <a href="/">Studies</a>
-          <a href="/">Virtual Classroom</a>
-          <a href="/">Syllabus</a>
+          <AlertDialog title='Teachers' />
+          <AlertDialog title='Studies' />
+          <AlertDialog title='Virtual Classroom' />
+          <AlertDialog title='Syllabus' />
+          
           
           
          
