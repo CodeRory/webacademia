@@ -11,10 +11,12 @@
   display: flex;
   flex-direction: row;
   margin-top: 4%;
+  font-family: Porpora;
 }
 
 #schedule {
   margin-top: -14%; 
+  font-family: Porpora;
 }
 
 #yorel {
@@ -35,9 +37,12 @@
 @media (max-width: 700px) {
   #yorel {
     font-size: initial;
+    text-align: center;
   }
   #schedule {
     font-size: x-small;
+    text-align: center;
+    width: 150px;
   }
 
 

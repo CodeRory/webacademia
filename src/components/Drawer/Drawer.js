@@ -42,7 +42,7 @@ export default function PersistentDrawerLeft() {
                     <p>M-F 10:00-14:00 / 17:00-20:15 </p>                
                 </div>
             </div>
-          <div id='yorel' style={{border: 'radius'}}>
+          <div id='yorel' >
             Yorel Academy
           </div>
         </Toolbar>
