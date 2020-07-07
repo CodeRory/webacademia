@@ -51,7 +51,7 @@ nav ul li a{
 nav ul li a:hover{
     color:rgb(121, 5, 5);    
     border-radius: 5px;
-    box-shadow: 0 0 5px #33fff, /* en teoria esto era para darle el efecto de los bordes */
+    box-shadow: 0 0 5px #33fff, 
                 0 0 5px #66fff;
 }
 
@@ -65,10 +65,10 @@ nav ul ul li a:hover{
 nav ul ul{
     position: absolute;
     top: 130%;
-    border-top: 3px solid rgb(121, 5, 5); /* El color del borde superior cuando se despliega el menú */
+    border-top: 3px solid rgb(121, 5, 5); 
     opacity: 0;
     visibility: hidden;
-    transition: top .3s;   /* La diferencia entre los 90px de este y los 70 del siguiente es el saltito que da al abrirlo */
+    transition: top .3s;   
     
 }
 
@@ -102,8 +102,8 @@ nav ul ul li a {
 
 nav ul ul ul li{
     position: relative;
-    top: -40px; /* A la altura que sale las secciones del More */
-    left: 150px; /* A la distancia hacia la derecha que salen las secciones del More */
+    top: -40px; 
+    left: 150px; 
     
 }
 
@@ -117,7 +117,7 @@ nav ul ul ul li{
 
 
 
-/* -------------MOVIL----------------- */
+/* -------------MOBILE----------------- */
 
 @media (max-width: 700px) {
     .Header {

@@ -6,21 +6,13 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
 
 import study1 from '../Slide/study1.png';
 import study2 from '../Slide/study2.png';
 import study3 from '../Slide/study3.png';
 import study4 from '../Slide/study4.png';
 
-
-
 import '../Slide/Slide.css';
-
-
-
-
-
 
 function FormDialog(props) {
   const [open, setOpen] = React.useState(false);
@@ -33,8 +25,6 @@ function FormDialog(props) {
     setOpen(false);
   };
 
-
-  
   
   return (
     <div>

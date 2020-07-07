@@ -1,15 +1,10 @@
 import React from 'react';
 /* import Dropdown from './components/dropdown/Dropdown'; */
-
 import Opos from './components/Opos/Opos';
 import Final from './components/final/Final';
 import PersistentDrawerLeft from './components/Drawer/Drawer';
-
 import Slideshow from './components/Slide/Slide';
-
-
 import Sections from './components/Sections/Sections';
-
 
 import './App.css';
 
@@ -27,9 +22,6 @@ function App() {
       </div>
       <div>
         <Slideshow />
-      </div>
-      <div>
-      
       </div>
       <div>
         <Opos/>

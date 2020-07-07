@@ -7,9 +7,9 @@
 }
 
 .App {
-	width: 90%; /* Deja márgenes (hay que poner margin auto también) a los lados sin tocar el drawer */
-	margin: 0 auto; /* Hace posible los márgenes y que la web se centre */  
-	max-width: 3100px;/*  El ancho máximo que tendrá nuestra web, por muy grande que se vea la pantalla, de ésta manera no se deformarán nuestro elementos al alargarse demasiado */
+	width: 90%; 
+	margin: 0 auto; 
+	max-width: 3100px;
 	-webkit-box-shadow: 0px 6px 15px 4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 6px 15px 4px rgba(0,0,0,0.75);
 	box-shadow: 0px 6px 15px 4px rgba(0,0,0,0.75);

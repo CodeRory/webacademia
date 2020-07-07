@@ -11,10 +11,6 @@ import Slide from '@material-ui/core/Slide';
 
 import '../Opos/Opos.css';
 
-
-
-
-
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: 'relative',

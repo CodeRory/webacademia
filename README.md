@@ -1,1 +1,3 @@
-Proyecto de página de una academia. 
+A template for an Academy/business.
+
+CodeRory

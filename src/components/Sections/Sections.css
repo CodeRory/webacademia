@@ -1,6 +1,5 @@
 .Header {
-    position: flex;
-    /* top: 0; Stick it to the top  */
+    position: flex;    
     margin-top: 70px;
     max-height: 70px;
     min-height: 60px;
@@ -8,20 +7,14 @@
     margin-bottom: 1%;
   
     display: grid;
-    grid-template-areas: "nav logo"; /* se quitó el área del loco, antes era 'logo nav' */
+    grid-template-areas: "nav logo"; 
   
-    /* Cosmetics */
+    
     background-color: #282c34;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 3;
     font-family: Porpora;
   }
-  
- /*  .Logo {
-    grid-area: logo;
-    height: 70px;
-    
-  }  */
   
   .Nav {
     display: grid;
@@ -82,9 +75,9 @@
    text-shadow: 1px 1px 15px #000000;
   }
   
-  .Burger {
+  .Book {
     display: none;
-    grid-area: burger;
+    grid-area: book;
     margin: 0 20px 0 0;
     padding: 0;
     justify-self: end;
@@ -94,13 +87,13 @@
     outline: none;
     transition: 0.1s;
   }
-  .Burger:active {
+  .Book:active {
     transform: scale(1.2);
   }
   
   @media (max-width: 700px) {
     .Header {
-      grid-template-areas: "logo burger" "nav nav";
+      grid-template-areas: "logo book" "nav nav";
     }
     .Nav {
       grid-template-rows: repeat(4, auto);
@@ -113,7 +106,7 @@
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
     }
-    .Burger {
+    .Book {
       display: inline;
     }
     #myButton {
@@ -174,8 +167,7 @@
   flex-direction: row;
   justify-content: center;
   border-bottom: solid 0.1px;
-  font-family: 'Porpora' !important;
-  
+  font-family: 'Porpora' !important;  
   padding:20px;
   margin: 0;
   
@@ -206,17 +198,6 @@
   font-family: 'Porpora';
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .cardFooter {
